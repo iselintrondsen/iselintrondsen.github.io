@@ -42,8 +42,9 @@ p {
   font-size: 1.2rem;
   font-weight: 300;
   color: #2E2E2E;
-  
+
 }
+
 
 .logo p {
   font-family: 'Open Sans', sans-serif;
@@ -100,6 +101,35 @@ nav a {
 }
 
 
+fieldset,
+label {
+    font: 1rem;
+font-weight: bold;
+text-align:center;
+margin-bottom: 10px;
+
+
+}
+
+
+input {
+    margin: .4rem;
+    
+}
+
+#ytterpunkt {
+  background-color:#ffffff;
+  
+
+
+
+}
+
+
+
+
+
+
 
 /**************************  Elements styling    *****************************/
 
@@ -148,7 +178,7 @@ footer {
 
 .top-section {
   justify-content: space-around;
-  height: 30vh;
+  height: 20vh;
   background-color: #F7F7F7;
 
   }
@@ -303,116 +333,3 @@ footer {
 }
 
 
-
-
-
-/********************************  MOBILE  ************************************/
-
-@media only screen and (max-width: 700px) {
-
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    text-align: center;
-    padding: 0 30px;
-  }
-  .explore {
-    justify-content: center;
-  }
-  .explore h2 {
-    align-self: center;
-    padding-left: 0;
-    font-size: 1.6rem
-  }
-  .special h2 {
-    align-self: center;
-    font-size: 1.6rem
-  }
-  .get-involved h2 {
-    align-self: center;
-      padding-left: 0;
-    font-size: 1.6rem
-  }
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 0 0;
-  }
-  nav {
-    padding: 0;
-  }
-
-  .top-section h1 {
-    font-weight: 400;
-    font-size: 2rem;
-    color: #2E2E2E;
-    text-align: center;
-}
-
-  .top-section {
-    justify-content: center;
-    font-size: 1rem;
-    height: 50vh;
-  }
-
-  .exhibition-section {
-    flex-direction: column-reverse;
-  }
-  .exhibition-section-left {
-    padding-bottom: 50px;
-  }
-  .exhibition-section-image {
-    width: 100vw;
-    height: 50vw;
-  }
-
-  .top-section p {
-    padding-left: 0;
-  }
-  .special-event-sections {
-    flex-direction: column;
-  }
-  .card {
-    width: 90vw;
-    padding: 20px 30px;
-    margin: auto;
-    justify-content: center;
-  }
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-  }
-  .exhibition-section {
-    display: flex;
-    flex-direction: column;
-  }
-  .text-card {
-    width: 100vw;
-    padding: 20px;
-  }
-  .reverse {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .exhibitions-image {
-    width: 100vw;
-    object-fit: scale-down;
-  }
-  main {
-    flex-direction: column;
-  }
-  .width {
-    width: 100vw;
-  }
-  .padding {
-    padding: 0;
-  }
-  .about-containers {
-    flex-direction: column;
-  }
-  .bottom-feature-section {
-    flex-direction: column-reverse;
-  }
-
-}
