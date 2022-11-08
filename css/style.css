@@ -100,34 +100,49 @@ nav a {
   font-weight: bold;
 }
 
+/********************** FORM STYLING ************************/
 
-button, fieldset,
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    width: 150px;
+    -webkit-appearance: none;
+    background-color: #dbc8e2;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #85b6b0;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #373737;
+    box-shadow: -80px 0 0 80px #b8d7dc;
+  }
+
+}
+
+
+  
 label {
-    font: 1rem;
-font-weight: bold;
+font-weight: light;
 text-align:center;
 
-
-
 }
 
-
-
-  
-
-
-input {
-    margin: .4rem;
-    
+fieldset {
+  background-image: radial-gradient(rgb(233, 242, 237), rgb(243, 246, 242));
+  text-align: center;
 }
 
-#ytterpunkt {
-  background-color:#ffffff;
-  
-
-
-
-}
 
 
 
@@ -199,16 +214,16 @@ footer {
   background-color: #ffffff;
 }
 
-.exhibition-section {
+.mid-section {
   background-color: #ffffff;
 }
 
-.exhibition-section-image {
+.example-section-image {
   width: 40vw;
   height: 400px;
 }
 
-.exhibition-section-left{
+.mid-section-left{
   text-align: center;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -270,8 +285,8 @@ footer {
   flex-direction: column;
 }
 
-.exhibitions-image {
-  width: 50vw;
+.mid-section-image {
+  width: 40vw;
   object-fit: contain;
   padding: 20px 0;
   box-sizing: border-box;
@@ -284,6 +299,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 20px 80px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .about-card {
