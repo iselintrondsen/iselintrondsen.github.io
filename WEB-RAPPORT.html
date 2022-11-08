@@ -28,7 +28,7 @@
         </div>
      </section>
     </main>
-
+    
  <form>
       <fieldset>
 
@@ -39,33 +39,73 @@
 
 <p>
   <label for="natteravn">Morgenfugl</label>
-  <input type="range" id="natteravn" name="natteravn" value="50">
+  <input type="range" id="natteravn" name="natteravn" value="50" min="0" max="100">
   <label for="natteravn">Natteravn</label>
 </p>
 
 <p>
   <label for="jobbesammen">Jobbe sammen</label>
-  <input type="range" id="jobbesammen" name="jobbesammen" value="50">
-  <label for="natteravn">Gå for seg selv og tenke</label>
+  <input type="range" id="jobbesammen" name="jobbesammen" value="50" min="0" max="100"> 
+  <label for="natteravn">Tenke alene</label>
 </p>
 
 <p>
-  <label for="grundig">Vil du gå gjennom oppgaven grundig</label>
-  <input type="range" id="grundig" name="grundig" value="50">
+  <label for="grundig">Gå i detalj</label>
+  <input type="range" id="grundig" name="grundig" value="50" min="0" max="100">
   <label for="grundig">Hoppe rett i det</label>
 </p>
 
 <p>
-  <label for="snakke">Gå videre</label>
-  <input type="range" id="snakke" name="snakke" value="50">
   <label for="snakke">Snakke om det</label>
+  <input type="range" id="snakke" name="snakke" value="50" min="0" max="100"> 
+  <label for="snakke">Gå videre</label>
 </p>
 
 <p>
-  <label for="oppgaven">Snakke seg gjennom oppgaven</label>
-  <input type="range" id="oppgaven" name="oppgaven" value="50">
+  <label for="oppgaven">Forstå oppgaven i plenum</label>
+  <input type="range" id="oppgaven" name="oppgaven" value="50" min="0" max="100"> 
   <label for="oppgaven">Forstå oppgaven selv</label>
 </p>
+
+<p>
+  <label for="avbrutt">Avtal samtale</label>
+  <input type="range" id="avbrutt" name="avbrutt" value="50" min="0" max="100">
+  <label for="oppgaven">Samtale når som helst </label>
+</p>
+
+<p>
+  <label for="video">Video samtale</label>
+  <input type="range" id="video" name="video" value="50" min="0" max="100"> 
+  <label for="oppgaven">Tekst</label>
+</p>
+
+
+<p>
+  <label for="jobbe">Jobbe 09-17</label>
+  <input type="range" id="jobbe" name="jobbe" value="50" min="0" max="100"> 
+  <label for="oppgaven">Ingen timeplan</label>
+</p>
+
+<p>
+  <label for="tidlig">Tidlig lunsj</label>
+  <input type="range" id="tidlig" name="tidlig" value="50" min="0" max="100"> 
+  <label for="oppgaven">Sen lunsj</label>
+</p>
+
+<p>
+  <label for="arbeidsdager">Fem korte arbeidsdager</label>
+  <input type="range" id="arbeidsdager" name="arbeidsdager" value="50" min="0" max="100"> 
+  <label for="oppgaven">Fire lange arbeidsdager</label>
+</p>
+
+<p>
+  <label for="kanbanscrum">Kanban</label>
+  <input type="range" id="kanbanscrum" name="kanbanscrum" value="50" min="0" max="100"> 
+  <label for="oppgaven">Scrum</label>
+</p>
+
+
+
 <input type="submit" value="Send">
 <div class="results">
   <h2>output</h2>
@@ -77,7 +117,8 @@
 
 <script>
  
-  async function postData(url = '', data = {}) {
+
+async function postData(url = '', data = {}) {
        
        const response = await fetch(url, {
            method: 'POST', 
